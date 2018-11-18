@@ -59,17 +59,17 @@ minetest.register_ore{
     ore_type = 'scatter',
     ore = id('ore_raw'),
     wherein = 'default:stone',
-    clust_scarcity = 12 * 12 * 12,
+    clust_scarcity = 12 * 12 * 6,
     clust_num_ores = 6,
     clust_size = 4,
     y_min = -30000,
-    y_max = 8
+    y_max = -32
 }
 minetest.register_ore{
     ore_type = 'scatter',
     ore = id('ore_raw_desert'),
     wherein = 'default:desert_stone',
-    clust_scarcity = 12 * 10 * 8,
+    clust_scarcity = 12 * 10 * 4,
     clust_num_ores = 6,
     clust_size = 6,
     y_min = -30000,
