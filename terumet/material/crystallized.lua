@@ -41,7 +41,7 @@ terumet.register_crystal{
     color='#1f2631',
     name='Crystallized Obsidian',
     source='default:obsidian',
-    cooking_result='default:obsidian'
+    cooking_result='default:stone'	-- crafting loop is too OP
 }
 terumet.register_crystal{
     suffix='mese',
