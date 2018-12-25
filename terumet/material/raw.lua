@@ -1,13 +1,15 @@
 local id = terumet.id
 local tex = terumet.tex
 
+local balance_mult = 3
+
 -- standard stone
 minetest.register_node( id('ore_raw'), {
     description = 'Terumetal Ore',
     tiles = {terumet.tex_comp('default_stone.png', 'ore_raw')},
     is_ground_content = true,
     groups = {cracky=2},
-    drop = id('lump_raw'),
+    drop = id('lump_raw', balance_mult),
     sounds = default.node_sound_stone_defaults()
 })
 
@@ -17,7 +19,7 @@ minetest.register_node( id('ore_raw_desert'), {
     tiles = {terumet.tex_comp('default_desert_stone.png', 'ore_raw')},
     is_ground_content = true,
     groups = {cracky=2},
-    drop = id('lump_raw',2),
+    drop = id('lump_raw',2*balance_mult),
     sounds = default.node_sound_stone_defaults()
 })
 
